@@ -1,0 +1,54 @@
+Movies {
+movie_id INT,
+movie_title TEXT,
+movie_year DATE,
+movie_time TIME,
+movie_language TEXT,
+movie_rel_date DATE,
+movie_rel_Country TEXT
+}
+
+Genre {
+gen_id INT,
+gen_tile TEXT
+}
+
+movie_genres{
+movie_id INT,
+gen_id INT,
+}
+
+reviewer{
+rev_id INT,
+rev_name TEXT
+}
+
+movie_director {
+dir_id INT,
+mov_id INT
+}
+
+actor
+{
+act_id INT,
+act_fname TEXT,
+act_lname TEXT,
+act_gender TEXT
+}
+
+director {
+dir_id INT,
+dir_fname TEXT,
+dir_lname TEXT
+}
+
+rating {
+mov_id INT,
+rev_id INT,
+rev_stars INT,
+ratings INT
+}
+
+
+
+
